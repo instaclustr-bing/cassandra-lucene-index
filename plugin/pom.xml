@@ -39,6 +39,12 @@
     <properties>
         <version.snowball-stemmer>1.3.0.581.1</version.snowball-stemmer>
         <version.findbugs>3.0.1</version.findbugs>
+        <version.jdeb>1.8</version.jdeb>
+        <version.rpm>1.5.0</version.rpm>
+        <version.scala.maven.plugin>4.4.0</version.scala.maven.plugin>
+        <version.scala>2.13.1</version.scala>
+        <outputDirectory>${project.build.directory}</outputDirectory>
+        <maintainer>smiklosovic at apache dot org</maintainer>
     </properties>
 
     <dependencies>
@@ -51,12 +57,6 @@
             <groupId>com.typesafe.scala-logging</groupId>
             <artifactId>scala-logging_${scala.binary.version}</artifactId>
             <version>${scala.logging.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.scalatest</groupId>
-            <artifactId>scalatest_${scala.binary.version}</artifactId>
-            <version>${scalatest.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.cassandra</groupId>
