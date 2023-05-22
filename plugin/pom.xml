@@ -39,7 +39,6 @@
     <properties>
         <version.snowball-stemmer>1.3.0.581.1</version.snowball-stemmer>
         <version.findbugs>3.0.1</version.findbugs>
-        <version.scala.maven.plugin>4.8.1</version.scala.maven.plugin>
     </properties>
 
     <dependencies>
