@@ -39,6 +39,7 @@
     <properties>
         <version.snowball-stemmer>1.3.0.581.1</version.snowball-stemmer>
         <version.findbugs>3.0.1</version.findbugs>
+        <version.javax-validation>2.0.1.Final</version.javax-validation>
     </properties>
 
     <dependencies>
@@ -120,6 +121,12 @@
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
             <version>${version.findbugs}</version>
+        </dependency>
+        <!-- Fixing Cassandra Lucene Index plugin build fails due to missing of javax.validation.constraints (being used in SingleColumnMapper.java & MultipleColumnMapper.java). -->
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>${version.javax-validation}</version>
         </dependency>
     </dependencies>
 
